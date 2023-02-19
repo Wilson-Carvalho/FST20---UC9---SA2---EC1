@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2? family= Black+Han+Sans & family= Roboto & family= Titillium+Web:wght@400;700 & display=swap'); /*Importando a fonte roboto
+sempre que estivermos fazendo a importação de algo externo
+ele deve ficar acima de qualquer configuração*/
+
+*{
+   margin:0;
+   padding:0;
+   box-sizing:border-box;} /* Reconfigura o site, tirando a configuração padrão do site e colocamos nossa configuração. O * possibilita 
+que essa nova configuração seja aplicada em todo o meu site*/
+
+.Container-grid{
+    width: 1200px; /* Ajuda a definir a largura de algum elemento*/
+    height: 100%; /*height = altura, quando usamos 100%, quer dizer que iremos usar 100% e será liberardo */
+    margin: auto; /* A Margin - determina o limite onde será exibido o site, neste caso auto, faz com a margin 
+    seja aplicada automáticamente*/
+    display: flex; /* ajuda no posicionamento dos elementos*/
+    justify-content: space-between; /* Neste caso, ele irá posicionar os elementos com certo espaço entre eles*/
+    align-items: center; /*Alinhar os itens de forma centralizadas no site*/
+}
+header{
+    background-color:#1E1C21;
+    height: 80px;} /*header é uma tag nativa que se 
+    encontra no body*/
+.menu{
+    width: 660px; /* a largura que meu menu ocupará 
+    dentro do meu cabeçalho*/
+    display: flex; /* ele ajusta minha pagina de acordo com 
+    pagina*/
+    justify-content: space-between; /* Me permite ter espaço
+    entre cada elemento*/
+}
+.menu a{
+    color: white; /* A cor da letra será branca*/
+    text-decoration: none; /* Retirar decoração ou sublinhado
+    da letra*/
+    text-transform: uppercase; /*Transformando o texto
+    em maisculo*/
+    font-size: 20px; /* Tamanho da fonte */
+    font-family: 'Roboto', sans-serif; /* Por que Roboto e sans-serif apareceu nessa ordem? 
+    O meu navegador busca primeiro minha fonte roboto, caso não encontre, ele buscará
+    a segunda opção que seria sans-serif que é uma fonte padrão
+    para todos*/
+}/* Quando for configurar elementos dentro de uma class,
+chamo primeiro a class, depois, chamo a tag ou grupo de 
+tag que desejo configurar ou estilizar, partindo da maior (class), para a menor (Tag)*/
